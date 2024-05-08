@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- <link rel="stylesheet" href="style_footer.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fe4cb25373.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./DB/Google Sheet.css">
+
+    <style>
+      .card-body{
+        background: #ffffff;
+        width: 100%;
+        /* height: 10em; */
+      }
+
+      /* service card ------------------- */
+      .card-group{
+        /* width: auto;
+        height: auto; */
+        margin-top: 5em;
+      }
+      .card-group .card-body{
+        height: 10em;
+        visibility: hidden;
+        transition: 0s;
+      }
+      .card-group  :hover .card-body{
+        transition: 2s;
+        height: 100%;
+        visibility: visible;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light  fs-6">
+    <div class="container" id="div2">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/Logo-png.png" alt="Logo" width="auto" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-light text-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./About.html" >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-primary" href="./Services.html" >Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Gallery.html" >Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-5" href="./Contact.html" >Contact</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                courses
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="./Services.html">NEET</a></li>
+                <li><a class="dropdown-item" href="#feed1">JEE</a></li>
+                <li><a class="dropdown-item" href="./Services.html">FOUNDATION</a></li>
+      
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+          <!-- video banner -->
+    <div id="bannerContainer ">
+      <video autoplay muted loop>
+        <source src="./assets/Intro_Outro Music 10 Seconds.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="content  overflow-hidden ">
+        <h2 class="fs-1 fw-bold">THE ACHIVER'S <SPAN class="text-warning">HUB</SPAN></h2>
+        <p class="fs-4 text-center ">NEET || JEE || FOUNDATION COURSES</p>
+           <!-- modal buttons  -->
+           <button class="btn btn-outline-success text-light   "   type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact Now</button>
+           <div class="caption mt-5  ">
+               <h1  class=" fs-1 fw-bold">Contact</h1>
+               <h1 class=" fs-4" >+91 9688896792, 8489967926
+                <p class=" fs-4 mt-2" > Email: theachivershub2023@gmail.com</p>
+                 Website: www.theachivershub.com.in</h1>
+            </div>
+
+      </div>
+    </div>
+ <!-- modal  -->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light text-secondary">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact details </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Please contact this number <B>(+91)8489967926, Dr. R.Karthika 
+          Managing Director</B> to know more details.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- Servicesss -->
+      <div class="container mt-3 border-0 overflow-hidden" style="width: 80%;font-family: poppins; overflow:hidden;">
+        <p class="fs-1 text-success fw-bold container-fluid text-center" >Services</p>
+        <p class="fs-4 text-secondary">We have a to provide It is a highly result oriented course for students who drop year for preparation aiming for admission the following year. 
+          Subject expert faculties having track recored of results will be assigned for entrance based lecture session.
+          Regular programme for class XI & XII pursuing students is a predefined result oriented weekday/weekend programme enriching their concepts with due practise of Mcq's shortcuts aiming at excellence in competitive exam & school board exam.
+        </p>
+        </div>
+
+        
+
+        <!-- call and whatsapp buttons -->
+<div class="fixed-icon container-fluid d-flex flex-row justify-content-between   " >
+  <a href="https://wa.me/8489967926"><i class="fa-brands fa-whatsapp fa-bounce whatsapp"  style="color: #ffffff;background: 
+    #00b37d;padding:  18px 18px; border-radius: 5em;box-shadow: -1px 4px 13px -4px rgba(0,0,0,0.5); margin-left: 5em; "></i></a>
+  <i class="fa-solid fa-phone-volume fa-bounce" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="color: #ffffff; background:
+   #007bff;padding: 15px 15px; border-radius: 5em; box-shadow: -1px 4px 13px -4px rgba(0,0,0,0.5);"></i>
+</div>
+
+
+<!-- </div> -->
+<!-- first row container  -->
+<h1 class="fw-bold text-success text-center ">OUR COURSE</h1>
+<div class="container mt-5 ">
+  <div class="row gap-5 d-flex flex-wrap justify-content-center">
+    <div class="col-lg-6  rounded-5 pt-5 pb-5 pe-5 ps-5 shadow" style="background-color: #ffffff;">
+     <h1 class="fw-bold">REPEATER PROGRAM:</h1>
+     <p class="fs-5">It is a highly result oriented course for students who drop year for preparation aiming for admission the following year. 
+      Subject expert faculties having track recored of results will be assigned for entrance based lecture session.
+    </p>
+      <h3 class="fw-bold">KEY HIGHLIGHTS:</h3>
+      <ul class="fs-5">
+        <li>1. High degree discipline.</li>
+        <li> 2. Prescheduled & predefined result oriented teaching method.
+          </li>
+        <li>3.Exhaustive practise & extensive doubt clearing sessions.
+          </li>
+        <li>4. Focused & study friendly enviroment.
+          </li>
+        <li>5.24/7 Faculty & academic support.
+          </li>
+        <li>6. Practice over 30,000 plus MCQ's.
+          </li>
+        <li>7. Periodic performance analysis.
+          </li>
+        <li>8. Transparent performance tracking support to parents at a click away.</li>
+      </ul>
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Contact Now
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample1" >
+        <div class="card card-body">
+          You wnat to need more details Please contact using this <B>(+91) 9688896792, 8489967926</B>  nubmber.
+        </div>
+      </div>
+    </div>
+    <!-- regular program  -->
+    <div class="col-lg-5  rounded-5 pt-5 pb-5 pe-5 ps-5 shadow" style="background-color: #ffffff;">
+      <h1 class="fw-bold">REGULAR PROGRAM:</h1>
+      <p class="fs-5">Regular programme for class XI & XII pursuing students is a predefined result oriented weekday/weekend programme enriching their concepts with due practise of Mcq's shortcuts aiming at excellence in competitive exam & school board exam.
+      </p>
+       <h3 class="fw-bold">COURSE HIGHLIGHTS:</h3>
+       <ul class="fs-5">
+         <li>1. Live physical lectures - expert faculites delivering concepts in a simplified contexual 
+          approach registering concepts for life time.</li>
+         <li> 2. Doubt clearing sessions - interactive sessions clearing their doubts.
+           </li>
+           <h3>HIGH ORDER THINKING SKILS:</h3>
+         <li>3. Lllustrative & experiment based learning activities learning made fun with real life examples and experiments.
+           </li>
+         <li>4. Grand genius quiz - builds the team spirit, time management skill & the killer 
+          instinct among the students who doesn't happen alone in a classroom teaching.
+           </li>
+       </ul>
+       <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Contact Now
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample2" >
+        <div class="card card-body">
+          You wnat to need more details Please contact using this <B>(+91) 9688896792, 8489967926</B>  nubmber.
+        </div>
+      </div>
+    </div>
+     </div>
+  </div>
+</div>
+<!-- feed-1  -->
+<div class="container-fluid text-light mt-5 mb-5 d-flex justify-content-center text-center pt-5 pb-5" id="feed1" style="background-color: #121212;">
+  <div class="row">
+    <h1 class="fs-1 fw-bold">NEET JEE Foundation classes (std 6 to 10)
+    </h1>
+    <p class="fs-5">We provide Top - Notch Power Packed Result Proven Course Delivery Plan.
+    </p>
+    <p class="fs-5">Highly Qualified and Experienced Faculties. Know the Tips and Tricks From our trainers and Score Smartly.
+    </p>
+    <p class="fs-5">We Offer Flexible Scheduling and Affordable Pricing to Fit Your Budget.
+    </p>
+    <div class="container ">
+    <a href="" class="text-decoration-none text-light "><p class="fs-4 st1a rounded-5 bg-success">1 Year regular - Students moving to grade XII from XI</p></a>
+    <a href="" class="text-decoration-none text-light "><p class="fs-4 bg-success rounded-5">2 Years regular - Student moving to grade XI from X</p></a>
+  <button class="btn btn-warning" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Call Now</button>
+  </div>
+</div>
+</div>
+<!-- feed-2  -->
+<div class="container-fluid text-light mt-5 mb-5 d-flex justify-content-center text-center pt-5 pb-5"  style="background-color: #121212;">
+  <div class="row">
+    <h1>3000</h1>
+    <p class="fs-5">Most probable MCQ discussed with Highest percentage of repeats in NEET 2017 - 20!!.
+    </p>
+    <div class="container ">
+    <a href="" class="text-decoration-none text-light "><p class="fs-4 st1a rounded-5 bg-success">1 Year regular - Students moving to grade XII from XI</p></a>
+    <a href="" class="text-decoration-none text-light "><p class="fs-4 bg-success rounded-5">2 Years regular - Student moving to grade XI from X</p></a>
+    <button class="btn btn-warning" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Call Now</button>
+  </div>
+</div>
+</div>
+<!-- short time programs  -->
+<!-- first colm  -->
+<div class="container gap-5 ">
+  <div class="row d-flex  flex-wrap">
+    <div class="col-lg-6 rounded-5 pt-5 pb-5 pe-5 ps-5 shadow" style="background-color: #ffffff;">
+      <h1>SHORT TERM COURSE:</h1>
+      <p>Our Academy is one of the fastest growing premier organisation madurai for professional competitive entrance Exam Coaching to generate toppers in short term course with expert faculties driven by technology & result oriented academic system.
+      </p>
+      <h3>COURSE HIGHLIGHTS:</h3>
+      <ul>
+<li>1. Daily leccture hours by expert faculties.
+  </li>
+<li>2. Daily faculty assisted MCQ practise.
+  </li>
+<li>3. Daily digital worksheets.
+  </li>
+<li>4.Assessments & discussions.
+  </li>
+<li>5. Regular doubt clearing sessions.</li>
+      </ul>
+    </div>
+<!-- second colum  -->
+    <div class="col-lg-6 d-flex gap-5 pt-5 pb-5 pe-5 ps-5">
+      <div class="row gap-5">
+        <div class="card shadow">
+          <p class="d-flex justify-content-center align-content-center mt-3">300 Hours </p>
+          <div class="card-body text-center">
+            <span class="mt-0">Power packed proven result - oriented course delivery plan.
+            </span>
+          </div>
+        </div>
+        <div class="card shadow">
+          <p class="d-flex justify-content-center align-content-center mt-3">240 Hours </p>
+          <div class="card-body text-center">
+            <span class="mt-0">Lecture session</span>
+          </div>
+        </div>
+      </div>
+      <div class="row gap-5">
+        <div class="card shadow">
+          <p class="d-flex justify-content-center align-content-center mt-3">5 CT</p>
+        <div class="card-body text-center">
+          <span class="mt-0">Cumulativve test & paper discussions
+          </span>
+        </div>
+        </div>
+        <div class="card shadow">
+          <p class="d-flex justify-content-center align-content-center mt-3">1
+            </p>
+            <div class="card-body text-center">
+              <span class="mt-0">Grand mock test</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p class=" mt-5 gap-1 text-center">
+  <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Contact now
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body text-center">
+    You wnat to need more details Please contact using this <B>(+91) 9688896792, 8489967926</B>  nubmber.
+  </div>
+</div>
+</div>
+<h1 class="text-center mt-5 fw-bold text-success">PACKAGE DETAILS</h1>
+<div class="container-fluid pt-2 pb-5 d-flex flex-wrap justify-content-center ">
+  <img src="./assets/score-card.png" alt="" class="shadow d-flex flexx-wrap w-75">
+</div>
+<!------------------>
+<!-- contact form  -->
+<div class="container" style="background: #2d2d2d; border-radius: 15px; padding: 2em;" >
+  <h1 class="fw-bold text-center  text-light">Keep in Touch</h1>
+  <form method="post" action="" name="contact-form">
+    <h4>Contact Us</h4>
+    <input type="text" name="your-name" placeholder="Name" required>
+    <input type="text" name="your-number" placeholder="Number" required>
+    <input type="email" name="your-email" placeholder="Email" required>
+    <textarea name="message" rows="7" placeholder="Your Message" ></textarea>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</div>
+<!------------------>    
+ <!-- ------Map and links----->
+ <div class="container4  bg-body-light pe-5 ps-5 pb-5 mb-4" style="margin-top: 5em; background: #00000075;">
+  <div class="row">
+    <div class="pt-5">
+      <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15717.917525593151!2d78.1734054!3d9.9772018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c7a476cc0177%3A0x12f4ff21f0c9f47c!2sThe%20Achiever&#39;s%20Hub!5e0!3m2!1sen!2sin!4v1715170226983!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d125748.56655115144!2d78.0779881949807!3d9.963655502191154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3b00c717eb945659%3A0x1e0d5bc0fcb99d32!2s55%2F4%20Surya%20Nagar%201st%20street%2C%20Alagar%20Kovil%20Main%20Rd%2C%20near%20bus%20stop%2C%20Madurai%2C%20Tamil%20Nadu%20625007!3m2!1d9.963665599999999!2d78.1603901!5e0!3m2!1sen!2sin!4v1712745667509!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      </div>
+  <div class=" text-center text-light ">
+    <h3 class="fs-2 fw-bolder mt-2 ">Address</h3>
+    <p class="fs-4 fw-normal">N0.2/992, Marish illam, LVB Nagar, Kadachanedal, Maduri-625 107. No.8, 
+      Thilagam complex (Near Velamal School), Bakya Nagar, Thiruppuvanam, Sivagangai - 630 611. 
+      <b>E-mail: theachievershub2023@gmail.com</b>
+      call: (+91)849967626 <br>
+      <!-- <button  type="button" class="btn btn-primary border-0 ms-2  btn-box">calll:(+91) 9688896792</button> -->
+      <button  type="button" class="btn btn-primary border-0 ms-2  btn-box">calll:(+91) 8489967926</button>    </p>
+</div>
+</div>
+</div>
+<!-- ------------------------------- -->
+
+ <!-- footer -->
+<footer class="container-fluid bg-secoundary overflow-hidden" width="100%" heigh="auto">
+  <div class="row ">
+      <div class=" col-lg-4 text-center mt-5 ">
+      <img src="./assets/Logo-png.png" style="margin-left: 2em;" width="50%" height="auto" alt="">
+      <p class="fs-3 fw-bold">The Achivers Hub</p>
+      <p>NEET || JEE || FOUNDATION COURSES</p> 
+  </div>
+  
+  <div class="col-lg-4  text-center mt-2 mb-5 ">
+      <h3 class="sm-me-5 mt-5 pt-5 fw-bold">Quick Links</h3>
+    <div class="content2 mt-3">
+      <ul class="d-flex flex-row gap-4 justify-content-center">
+       <li> <a href="index.html" >Home</a></li>
+       <li> <a href="About.html">About</a></li>
+       <li><a href="Servicecs.html">Services</a></li>
+       <li><a href="Gallery.html">Gallery</a></li>
+       <li><a href="Contact.html">Contact</a></li>            
+      </ul> 
+    </div>
+  
+  </div>
+  <div class="col-lg-3  text-center mt-5 pt-5 ">
+      <h3 class="fw-bold">Address</h3>
+      <p>N0.2/992, Marish illam, LVB Nagar, Kadachanedal, Maduri-625 107.
+        No.8, Thilagam complex (Near Velamal School),
+        Bakya Nagar, Thiruppuvanam, Sivagangai - 630 611. <br>
+        E-mail: <b> theachievershub2023@gmail.com</b> <br>
+        call: <b>(+91)9688896792, 849967626.</b>
+      </p>
+  </div>
+  </div>
+  <hr>
+  <div class="container overflow-hidden text-center">
+  <div class="row gap-5 mb-3 " >
+  <div class="col-lg-6 text-warning">
+    Copyright
+    &copy; <span id="copyright-year"></span> The Achivers Hub
+  </div>
+  <div class="col-lg-5 text-warning"> Developed by Spark Web Tech</div>
+  </div>
+  </div>
+  </footer>
+
+	<script src="./DB/Google Sheet.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+const navlikEls=document.querySelectorAll('.nav-link');
+        const windowpathname=window.location.pathname;
+        navlikEls.forEach(navlikEls => {
+            const navlinkPathname=new URL(navlikEls.href).pathname;
+            if((windowpathname === navlinkPathname) || (windowpathname === '/index.html' && navlinkPathname === '/')  ){
+                navlikEls.classList.add('active');
+                navlikEls.style.color="white";
+                navlikEls.style.dropshadow="balck,10px,10px,10px";
+            }
+        });
+
+// copy right
+document.addEventListener("DOMContentLoaded", function() {
+  var currentYear = new Date().getFullYear();
+  document.getElementById("copyright-year").innerText = currentYear;
+});
+</script>
+    
+</body>
+</html>
