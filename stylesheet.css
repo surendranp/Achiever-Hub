@@ -228,4 +228,12 @@ color: #ffb507;
 
     /* message display  */
 
-   
+.box-cont{
+  width: 100%;
+  height: auto;
+
+}
+.grid-container-1{
+  width: 50%;
+  height: 5em;
+}
